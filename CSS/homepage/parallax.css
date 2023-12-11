@@ -54,12 +54,12 @@ main {
 }
 
 .text {
-  position: fixed;
+  position: relative;
   z-index: 3;
   top: 40%;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
+  color: black;
   line-height: 0.88;
   pointer-events: auto;
 }

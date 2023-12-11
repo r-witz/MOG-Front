@@ -1,49 +1,156 @@
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: var(--bg-200);
+.travel{
+    height:100vh;
+    width:100%;
+    padding:150px 10%;
+    background-color: #cfdadb;
+    text-align: center;
+}
+.travel .title{
+    padding-bottom:100px;
+}
+.travel .itemImg{
+    width:25%;
+    float:left;
+}
+.travel .itemImg img{
+    width: 220px;
+    padding:5%;
+    height: 200px;
+}
+.darkshow{
+    width:100%;
+    padding:75px;
+    height:100vh;
+    background:#1f2538;
+    text-align: center;
+    color:#eee;
+}
+.darkshow .title{
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom:80px;
+    width:100%;
+}
+.darkshow .img{
+    width:50%;
+    position: relative;
+    float: left;
+    opacity: 0;
+}
+.darkshow.active .img{
+    animation: showimgdarkshow 1s ease-in-out 1s 1 forwards;
+}
+@keyframes showimgdarkshow{
+    from{
+        opacity: 0;
+        filter: blur(33px);
+        transform: translate(150px);
+    }to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translate(0);
+    }
+}
+.darkshow .img img{
+   width: 90%;
+   height:400px;
+   object-fit: cover;
+}
+.darkshow .list{
+    width:50%;
+}
+.contactItem{
+    width:36%;
+    background-color: #161924;
+    padding:40px 5%;
+    margin: 0 2% 2% 0;
+    float: left;
+    text-align: left;
+}
+.contactItem .icon{
+    width:max-content;
+    background-color: blueviolet;
+    padding:2px 10px;
+    font-size: small;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contactItem .titleContact{
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+.slug{
+    color:#555;
 }
 
-#main-content {
-  position: relative;
-  z-index: 5;
+.showtotop, .zoomshow{
+    opacity: 0;
 }
-
-main + section {
-  border: 1px solid transparent;
-  background-color: var(--bg-200);
+.active .showtotop{
+    animation:showtop 1s ease-in-out 1 forwards;
 }
-
-section > section {
-  position: relative;
-  margin: 7rem;
-  padding: 80px;
-  text-align: center;
-  background-color: var(--bg-100);
-  color: var(--text-100);
+.active .zoomshow{
+    animation:zoomshow 1s ease-in-out 1 forwards;
 }
-
-section ul li {
-  list-style: none;
+@keyframes zoomshow{
+    from{
+       transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
-
-h2 {
-  color: var(--primary-300);
+@keyframes showtop{
+    from{
+        opacity: 0;
+        transform: translate(0,100px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0,0);
+    }
 }
-
-div {
-  color: var(--text-200);
+.delay-02{
+    animation-delay: 0.2s!important;
 }
-
-button {
-  background-color: var(--accent-100);
-  color: var(--text-100);
-  padding: 10px 20px;
-  margin-top: 20px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.delay-04{
+    animation-delay: 0.4s!important;
 }
-
-button:hover {
-  background-color: var(--accent-200);
+.delay-06{
+    animation-delay: 0.6s!important;
+}
+.delay-08{
+    animation-delay: 0.8s!important;
+}
+.delay-1{
+    animation-delay: 1s!important;
+}
+.delay-12{
+    animation-delay: 1.2s!important;
+}
+.delay-14{
+    animation-delay: 1.4s!important;
+}
+.delay-16{
+    animation-delay: 1.6s!important;
+}
+.delay-18{
+    animation-delay: 1.8s!important;
+}
+.delay-2{
+    animation-delay: 2s!important;
+}
+.delay-12{
+    animation-delay: 1.2s!important;
+}
+.delay-14{
+    animation-delay: 1.4s!important;
+}
+.delay-16{
+    animation-delay: 1.6s!important;
+}
+.delay-18{
+    animation-delay: 1.8s!important;
 }
