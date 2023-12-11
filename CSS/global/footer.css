@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #03000e;
+    margin: 50px;
+    padding: 80px;
+    border-radius: 3px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.menu > a{
+    color: rgb(0, 111, 215);
+    font-size: 20px;
+}
+
+.sub-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.sub-menu a{
+    color: rgb(0, 100, 194);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.sub-menu a:hover{text-decoration: underline;}
+
+.copy-media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy{
+    display: flex;
+    gap: 15px;
+}
+
+.copy img{
+    width: 140px;
+    height: 23px;
+}
+
+.copy p{
+    color: rgb(0, 111, 215);
+    font-size: 16px;
+}
+
+.media{
+    display: flex;
+    gap: 5px;
+}
+
+.media a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.media a:hover{background-color: gainsboro;}
+
+.media a img{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+/* 900px screen device */
+@media(max-width:900px)
+{
+    footer{
+        gap: 30px;
+        margin: 0;
+        padding: 30px;
+        border-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+/* tab responsive */
+@media(max-width:768px)
+{
+    .menu-container{
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .copy-media{
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* mobile responsive */
+@media(max-width:570px)
+{
+    footer{padding: 30px 0;}
+
+    .menu-container{
+        padding: 0 5px;
+        gap: 30px;
+    }
+
+    .menu{position: relative;}
+    .menu > a{font-size: 15px;}
+    .sub-menu a{font-size: 12px;}
+    
+    .copy{gap: 5px;}
+    
+    .copy img{
+        width: 70px;
+        height: 15px;
+    }
+    
+    .copy p{font-size: 10px;}
+}    
