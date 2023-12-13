@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mog - Contact Page</title>
+    <link rel="stylesheet" href="../CSS/global/navbar.css" />
+    <link rel="stylesheet" href="../CSS/contactpage/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+<body>
+
+  <header>
+    <nav>
+      <a href="./index.html"
+        ><img src="../assets/logo/MOG-bg.svg" class="logo"
+      /></a>
+      <div class="navigation">
+        <div class="menuToggle"></div>
+        <ul>
+          <li>
+            <a href="./index.html">
+              <span class="icon"><i class="fa-solid fa-house"></i></span>
+              <span class="title">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="./HTML/profile.html">
+              <span class="icon"><i class="fa-solid fa-user"></i></span>
+              <span class="title">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="./HTML/contact.html">
+              <span class="icon"><i class="fa-solid fa-message"></i></span>
+              <span class="title">Contact</span>
+            </a>
+          </li>
+          <li>
+            <a href="./HTML/settings.html">
+              <span class="icon"><i class="fa-solid fa-gear"></i></span>
+              <span class="title">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="./HTML/team.html">
+              <span class="icon"><i class="fa-solid fa-user"></i></span>
+              <span class="title">Team</span>
+            </a>
+          </li>
+          <li>
+            <a href="./HTML/FAQ.html">
+              <span class="icon"><i class="fa fa-question"></i></span>
+              <span class="title">FAQ</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="left-section">
+        <h1>Parlez-nous de votre projet</h1>
+        <p>Email: example@example.com</p>
+        <p>Téléphone: ###########"</p>
+
+        <iframe
+            width="100%"
+            height="600"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=174%20Quai%20de%20Jemmapes,%2075010%20Paris&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+        </iframe>
+    </div>
+    <div class="right-section">
+        <h2>Formulaire de contact</h2>
+        <form action="#" method="post" class="contact-form">
+            <label for="company">Nom de l'entreprise<span class="required">*</span>:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="name">Nom<span class="required">*</span>:</label>
+            <input type="text" id="name" name="name" required>
+
+            <select id="size-dropdown" name="size-dropdown">
+                <label for="eleve">Elève<span class="required">*</span>:</label>
+                <option value="" selected="" disabled="">Qui voulez-vous contacter ?</option>
+                <option value="yann">Yann</option>
+                <option value="raphael">Raphael</option>
+                <option value="elisee">Elisee</option>
+            </select>
+
+            <label for="email">Email<span class="required">*</span>:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Téléphone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Message<span class="required">*</span>:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</div>
+
+<script src="../JS/navbar.js"></script>
+</body>
+</html>
