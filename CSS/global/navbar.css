@@ -87,7 +87,7 @@ header nav {
 .navigation .menuToggle::before {
   content: '+';
   position: absolute;
-  font-size: 2em;
+  font-size: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
