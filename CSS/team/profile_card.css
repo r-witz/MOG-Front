@@ -28,13 +28,28 @@
 }
 
 .front {
-  background: url(../../assets/team/Witz-R.jpg);
-  background-size: cover;
-  background-position: center;
   padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+#first .front {
+  background: url(../../assets/team/HOBBE-Y.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#second .front {
+  background: url(../../assets/team/Witz-R.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#third .front {
+  background: url(../../assets/team/NGOLO-ESSERE-E.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .front h2 {

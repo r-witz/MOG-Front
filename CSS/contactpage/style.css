@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: lightsalmon;
+    background: url("../../assets/Mounatins-Sunset.jpg");
+    background-size: cover;
     height: 90vh;
 }
 
@@ -11,13 +12,15 @@ body {
     flex-wrap: wrap; 
     max-width: 1200px;
     margin: 50px auto;
+    margin-top: 8rem;
 }
 
 .left-section {
     flex: 1;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: orange;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
 }
 
 .left-section h1 {
@@ -37,7 +40,7 @@ iframe {
     flex: 1;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: orange;
+    background-color: var(--bg-100);
 }
 
 .right-section h2 {
